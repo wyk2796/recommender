@@ -28,7 +28,7 @@ kaka.batch.history.interval=10
 kaka.batch.computer.interval=300000
 kaka.speed.stream.interval=10000
 kaka.serving.thread.num=10
-kaka.serving.ip=121.42.31.168
+kaka.serving.ip=hadoop04
 kaka.serving.port=40000
 kaka.serving.timeout=5
 
