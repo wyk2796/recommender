@@ -243,7 +243,7 @@
         <repository>
             <id>local-repository</id>
             <name>Local Repository</name>
-            <url>http://121.42.158.67:9999/nexus/content/groups/public</url>
+            <url>http://localhost:9999/nexus/content/groups/public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
@@ -333,7 +333,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>local</id>
-            <url>http://121.42.158.67:9999/nexus/content/groups/public</url>
+            <url>http://localhost:9999/nexus/content/groups/public</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
