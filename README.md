@@ -1,8 +1,13 @@
 # recommender
-![wyk](https://raw.github.com/skrusche63/spark-piwik/master/images/dr_kruscheundpartner_640.png)
+
+推荐总体架构图
+
+![recommender-desgin](http://7xl71l.com1.z0.glb.clouddn.com/recommend_design_recommend.jpg)
 
 推荐架构分为三个层次：
 batch ：主要处理离线模型训练并存入hdfs和数据存储入hdfs, 包括历史模型和历史数据管理， 目前只集成ALS
+
+
 
 speed ： 加载hdfs中生成的离线模型， 对从kafka 输入的实时数据流中的用户提供推荐 并把推荐结果写入hdfs
 
