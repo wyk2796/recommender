@@ -7,15 +7,20 @@
 推荐架构分为三个层次：
 batch ：主要处理离线模型训练并存入hdfs和数据存储入hdfs, 包括历史模型和历史数据管理， 目前只集成ALS
 
+
 batch层架构图
 ![batch-desgin](http://7xl71l.com1.z0.glb.clouddn.com/recommend_design_batch.jpg)
 
 speed ： 加载hdfs中生成的离线模型， 对从kafka 输入的实时数据流中的用户提供推荐 并把推荐结果写入hdfs
+
+
 speed层架构图
 ![speed-desgin](http://7xl71l.com1.z0.glb.clouddn.com/recommend_design_speed.jpg)
 
 
-serving ： 主要提供对外推荐服务和 整套推荐候选集， 候选推荐item 排序， 过滤，融合算法逻辑 
+serving ： 主要提供对外推荐服务和 整套推荐候选集， 候选推荐item 排序， 过滤，融合算法逻辑
+
+
 serving层架构图
 ![serving-desgin](http://7xl71l.com1.z0.glb.clouddn.com/recommend_design_serving.jpg)
 
