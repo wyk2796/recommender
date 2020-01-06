@@ -2,23 +2,23 @@
 
 Recommendation System Structure Graph.
 
-![recommender-desgin](http://7xl71l.com1.z0.glb.clouddn.com/recommend_design_recommend.jpg)
+![recommend.jpg](https://i.loli.net/2020/01/06/KpTVnRDvuCxLIYN.jpg)
 
 The Recommendation System have three components. They can deploy in different computes.
 - Batch : Control the training of models and save them into HDFS, and manage the model version and history data. now only it only integrates ALS model. 
 
 The graph of Structure
-![batch-desgin](http://7xl71l.com1.z0.glb.clouddn.com/recommend_design_batch.jpg)
+![batch.jpg](https://i.loli.net/2020/01/06/GWCZEQ2xTJl3aqO.jpg)
 
 - Speed: Upload offline model from HDFS, recommend items for users with real-time streaming data from Kafka, and then write the result back to HDFS and Hbase
 
 The graph of Speed
-![speed-desgin](http://7xl71l.com1.z0.glb.clouddn.com/recommend_design_speed.jpg)
+![speed.jpg](https://i.loli.net/2020/01/06/CoQOB8Jcv1LnpKI.jpg)
 
 - Serving: Provide recommendation servive for users. It can extend extra logicals for handling recommended item list. Such as sort, filter, and aggragate algorithm. 
 
 the graph of structure
-![serving-desgin](http://7xl71l.com1.z0.glb.clouddn.com/recommend_design_serving.jpg)
+![serving.jpg](https://i.loli.net/2020/01/06/UqNxr7mVMe3TWBl.jpg)
 
 - Conclusion
 The entire systems use AKKA concurrent frame to support mutli-thread and commication between threads. The part of web use Spary (light-weight Scala web server frame). Data mainly store in Hbase and HDFS.
